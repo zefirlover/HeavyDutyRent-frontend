@@ -1,0 +1,22 @@
+{
+  "name": "heavydutyrent-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "bootstrap": "^5.3.2",
+    "jquery": "^3.7.1",
+    "mitt": "^3.0.1",
+    "popper.js": "^1.16.1",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.1",
+    "vite": "^4.4.9"
+  }
+}
