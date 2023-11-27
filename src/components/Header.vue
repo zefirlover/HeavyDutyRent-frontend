@@ -2,9 +2,9 @@
     <header class="p-3 bg-dark text-white">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <router-link to="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                     <img src="../assets/HeavyDutyLogo.svg" alt="Logo" style="height: 30px; width: 30px; margin: 10px;"/>
-                </a>
+                </router-link>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li>
@@ -21,14 +21,14 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><router-link to="/advisor" class="nav-link px-2 text-white">Advisor</router-link></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Privacy Policy</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">About</a></li>
                 </ul>
 
                 <div class="text-end">
                     <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-warning">Sign-up</button>
+                    <button type="button" class="btn btn-warning sign-button">Sign-up</button>
                 </div>
             </div>
         </div>
@@ -104,5 +104,17 @@ export default {
  height: 20px;
  width: 20px;
  margin-right: 10px;
+}
+
+.sign-button {
+    background-color: #E5BE6D;
+    color: #000;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.sign-button:hover {
+    background-color: #B88E4A;
+    color: black;
 }
 </style>

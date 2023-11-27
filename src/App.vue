@@ -1,6 +1,5 @@
 <script setup>
 import HeaderComponent from './components/Header.vue'
-import ProductAlbum from './components/ProductAlbum.vue'
 import FooterComponent from './components/Footer.vue'
 </script>
 
@@ -8,11 +7,14 @@ import FooterComponent from './components/Footer.vue'
   <HeaderComponent/>  
 
   <main>
-    <ProductAlbum/>
+    <router-view></router-view>
   </main>
 
   <FooterComponent/>
 </template>
+
+<script>
+</script>
 
 <style scoped>
 </style>
