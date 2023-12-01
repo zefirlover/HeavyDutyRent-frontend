@@ -63,7 +63,6 @@ export default {
                 const response = await apiClient.get('/api/Category/' + id);
                 this.categorizedMachineries = response.data.machineries.$values
                 EventBus.emit('updateMachineries', this.categorizedMachineries);
-                // console.log(this.categorizedMachineries)
             } catch (e) {
                 this.errors.push(e);
             }
